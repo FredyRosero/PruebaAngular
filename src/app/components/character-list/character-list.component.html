@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <h1 class="text-center">Index of Marvel Characters</h1>
+    <!-- For each character in the characters array, create a card with the character's name and image -->
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3" *ngFor="let character of characters">
+            <div class="card mt-3">
+                <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ character.name }}</h5>
+                    <span>{{character}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
